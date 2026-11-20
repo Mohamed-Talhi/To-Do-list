@@ -1,0 +1,52 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+        <title>To-Do-List</title>
+    </head>
+        <body class="bg-blue-100 flex litem-center justifiy-center p-4 m-20 p-20 ">
+            <div class="bg-white  w-[550px] p-8 rounded-xl shadow-md m-auto p-auto " >
+            <h1 class="text-5xl font-bold text-blue-600 text-center mb-8" >Task Manager</h1>
+                    <div class="flex gap-4 mb-8 ">
+                            <input type="text" 
+                            placeholder="what needs to done ?" 
+                            class="flex-1 border-2 border-blue-600 rounded-md px-4 py-3 outline-none"
+                            id="taskInput">
+                                <button class=" bg-blue-600 rounded-md text-white px-6 py-3 hover:bg-blue-700 cursor-pointer" id="addBtn">Add Task</button>
+            </div>
+                <div id="TaskList">
+                <div class=" flex justifiy-between items-centre py-4 border-b border-dashed"> 
+                    <input type="checkbox" class="w-5 h-5 accent-green-500" id="TaskA">
+                    <label  for="TaskA" class="text-gray-400 line-through text-center flex-1 text-2xl" id="cheked">
+                        Task A
+                    </label>
+                    <button class="bg-red-600 text-white px-3 py-1 rounded cursor-pointer btn-remove">
+                        Remove
+                    </button>
+                </div>
+                <div class="flex justifiy-between items-centre py-4 border-b border-dashed ">
+                    <input type="checkbox" class="accent-green-500 w-5 h-5" id="TaskB">
+                    <label for="TaskB" class="text-black text-center flex-1 text-2xl" >
+                        Task B
+                    </label>
+                    <button class="bg-red-600 text-white px-3 py-1 rounded cursor-pointer btn-remove" >
+                        Remove
+                    </button>
+                </div>
+                <div class="flex justifiy-between items-centre py-4 border-b border-dashed">
+                    <input type="checkbox" class="accent-green-500 w-5 h-5" id="TaskC">
+                    <label for="TaskC" class="text-gray-400 line-through text-center flex-1 text-2xl">
+                        Task C
+                    </label>
+                    <button class="bg-red-600 text-white px-3 py-1 rounded cursor-pointer btn-remove">
+                        Remove
+                    </button>
+                </div>
+
+        </div>
+</div>
+    <script src="main.js"></script>
+    </body>
+    </html>
